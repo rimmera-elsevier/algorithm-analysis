@@ -18,5 +18,4 @@ def normalize(x):
 
 def plot_O_n(min_size, max_size):
     lengths = range(min_size, max_size)
-    times = normalize(lengths)
-    seaborn.lineplot(x="Length", y="O(n)", data=pandas.DataFrame({"Length": lengths, "O(n)": times}))
+    return normalize(lengths)
